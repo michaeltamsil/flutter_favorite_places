@@ -1,7 +1,8 @@
-import 'package:favorite_places/screens/add_place.dart';
+
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
+import 'package:favorite_places/screens/places.dart';
 
 final colorScheme = ColorScheme.fromSeed(
   background: const Color.fromARGB(255, 56, 49, 66),
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: theme,
-      home: const PlacesListScreen(),
+      home: const PlacesScreen(),
     );
   }
 }
