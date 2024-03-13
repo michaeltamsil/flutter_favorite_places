@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:favorite_places/providers/user_places.dart';
+import 'package:favorite_places/widgets/image_input.dart';
 
 class AddPlaceScreen extends ConsumerStatefulWidget {
   const AddPlaceScreen({super.key});
@@ -33,7 +34,7 @@ class _AddPlaceScreen extends ConsumerState<AddPlaceScreen> {
 
     Navigator.of(context).pop();
   }
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,6 +51,8 @@ class _AddPlaceScreen extends ConsumerState<AddPlaceScreen> {
                 style: TextStyle(
                     color: Theme.of(context).colorScheme.onBackground),
               ),
+              const SizedBox(height: 10),
+              const ImageInput(),
               const SizedBox(height: 16),
               ElevatedButton.icon(
                 icon: const Icon(Icons.add),
